@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--- StartGames ---</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Text font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+</head>
+
+<body>
+    <header id="event-description">
+        <div id="disclaimer">
+            <h2>StartGames</h2>
+            <p class="about-event">Um evento para revolucionar a sua vida nos mundo dos games</p>
+            <p>Data do evento:</p>
+            <p class="event-date">Domingo, 23 de Outubro/2022, a partir das 14h</p>
+        </div>
+
+        <div id="subscription-form">
+            <p>Preencha o formulário para receber os detalhes do evento</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Digite seu melhor e-mail" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="text" name="phone" placeholder="Numero do Whatsapp">
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Principal interesse</label>
+                    <select name="interest">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="old games">Jogos antigos</option>
+                        <option value="virtues">Virtuas</option>
+                        <option value="PC games">Jogos em PC</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input onclick="exibeAlert()" type="submit" class="btn" value="Quero me inscrever">
+                </div>
+            </form> 
+        </div>
+    </header>
+
+    <section id="key-benefits">
+        <h2>Transformamos qualquer jogo em torneio.</h2>
+
+        <div class="benefits">
+            <div class="benefit">
+                <div id="benefit-1" class="benefit-img"></div>
+                <p>
+                    Bem mais que um torneio uma experiência completa.
+                </p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-2" class="benefit-img"></div>
+                <p>
+                    Torneios em qualquer plataforma.
+                </p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-3" class="benefit-img"></div>
+                <p>
+                   Vamos fazer a diferença na vida  do participante.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <div id="address">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div id="address-details">
+                <p>Rua Gastão Justa 53</p>
+                <p>Bairro Marapaonga</p>
+                <p>Abertura: 14h</p>
+            </div>
+        </div>
+        <div id="about-location">
+            <h3>Local de destaque</h3>
+            <p>
+                O evento será realizado em um local prestigiado pelos amantes de
+                jogos, onde teremos exemplos de vários e tipos de jogos.
+            </p>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="detail" id="detail-1">
+            <img src="Imagens/hrz-3.jpg" alt="MiniGames" />
+            <div class="detail-description">
+                <h3>Conheça os varios  ambientes que você vai jogar.</h3>
+            </div>
+        </div>
+
+        <div class="detail" id="detail-2">
+            <div class="detail-description">
+                <h3>Onde jogar</h3>
+                <ul>
+                    <li>Super Computadores</li>
+                    <li>Celulares</li>
+                    <li>Plataforma virtual</li>
+                    <li>MiniGames</li>
+                    <li>E muito mais...</li>
+                </ul>
+            </div>
+            <img src="Imagens/hrz-4.jpg" alt="Jogos novos e antigos" />
+        </div>
+
+        <div class="detail" id="detail-3">
+            <img src="Imagens/hrz-6.jpg" alt="Jogos em PC" />
+            <div class="detail-description">
+                <h3>Tipos de Enventos</h3>
+                <ul>
+                    <li>Corporativos</li>
+                    <li>Para Escolas</li>
+                    <li>Para Faculdades</li>
+                    <li>Para Shoppins</li>
+                    <li>Prefeituras</li>
+                    <li>E muito mais...</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <h3>Gostou? Então se inscreva:</h3>
+        <button class="btn">Solicitar Inscrição</button>
+    </section>
+
+    <section id="localization" class="localization">
+        <div class="localization-map">
+            <h1><i class="bi bi-geo-alt-fill"></i>Nosso GoggleMap</h1>  
+        </div>
+
+        <div class="localization-card">
+            
+            <h1>Entre em contato</h1>
+            <ul>
+                <li><i data-feather="user"></i>Tarciano Deyvid Sancho Duarte</li>
+                <li><i data-feather="coffee"></i>Rua Gastão justa, 52</li>
+                <li><i data-feather="mail"></i>oi@startgames.com.br</li>
+                <li><i data-feather="phone"></i>(85)9 8897.7201</li>
+            </ul>
+        </div>
+        <div id="map"></div>
+
+    </section>
+
+    <footer id="footer">
+        <h3>StartGames</h3>
+        <p>A evolução dos jogos acontece aqui.</p>
+        <p><span>Facebook:</span> oi@startgames.com.br</p>
+        <p><span>Instagram:</span> @startgames.com.br</p>
+        <p><span>Desenvolvedor:</span> Tarciano Deyvid - Matricula: 201903229324</p>
+        <p>Aluno do Curso ADS - FIC</p>
+
+
+    </footer>
+
+    <script>
+        function exibeAlert(){
+            alert("Inscriação realizada com sucesso. Obrigado!")
+        }
+    </script>
+
+    <script>
+        feather.replace();
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -3.80432, lng: -38.56932 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+
+</body>
+
+</html>
